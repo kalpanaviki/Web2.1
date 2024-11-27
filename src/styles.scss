@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Bauhaus Light';
+    src: url('./assets/fonts/BauhausStd-Light.woff2') format('woff2'),
+         url('./assets/fonts/BauhausStd-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('./assets/fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+         url('./assets/fonts/BrandonGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Brandon Grotesque2';
+    src: url('./assets/fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+         url('./assets/fonts/BrandonGrotesque-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Bauhaus Light', sans-serif;
+  }
+  
+  body {
+    margin: 0px;
+    background-color: transparent;
+    font-family: 'Brandon Grotesque';
+    text-align: justify;
+  }
+  
+

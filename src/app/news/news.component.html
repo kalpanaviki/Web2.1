@@ -1,0 +1,15 @@
+<!-- News -->
+<div class="container-fluid main-news" id="Associates">
+  <div class="card-container">
+    <div class="card" *ngFor="let slide of slides" (click)="slide.isYouTube ? null : openLink(slide.link)">
+      <div *ngIf="slide.isYouTube; else imageTemplate">
+        <iframe [src]="getYouTubeEmbedUrl(slide.link)" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <ng-template #imageTemplate>
+        <img [src]="slide.imageSrc" alt="Slide Image" class="card-img-top">
+      </ng-template>
+      <div class="card-body caption">{{ slide.caption }}</div>
+    </div>
+  </div>
+  <br>
+</div>

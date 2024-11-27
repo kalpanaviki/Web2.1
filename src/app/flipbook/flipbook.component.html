@@ -1,0 +1,61 @@
+<!-- Previous Button -->
+<button id="prev-btn" (click)="goPrevPage()" [style.transform]="prevBtnTransform"> <- </button>
+
+<!-- Book -->
+<div id="book" class="book" [style.transform]="bookTransform">
+
+  <!-- Page 1 -->
+  <div id="p1" 
+       class="paper" 
+       [ngClass]="{ flipped: paperStates[0].flipped }" 
+       [style.zIndex]="paperStates[0].zIndex">
+    <div class="front">
+      <div class="front-content">
+        <h1>Front 1</h1>
+      </div>
+    </div>
+    <div class="back">
+      <div class="back-content">
+        <h1>Back 1</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 2 -->
+  <div id="p2" 
+       class="paper" 
+       [ngClass]="{ flipped: paperStates[1].flipped }" 
+       [style.zIndex]="paperStates[1].zIndex">
+    <div class="front">
+      <div class="front-content">
+        <h1>Front 2</h1>
+      </div>
+    </div>
+    <div class="back">
+      <div class="back-content">
+        <h1>Back 2</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 3 -->
+  <div id="p3" 
+       class="paper" 
+       [ngClass]="{ flipped: paperStates[2].flipped }" 
+       [style.zIndex]="paperStates[2].zIndex">
+    <div class="front">
+      <div class="front-content">
+        <h1>Front 3</h1>
+      </div>
+    </div>
+    <div class="back">
+      <div class="back-content">
+        <h1>Back 3</h1>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Next Button -->
+<button id="next-btn" (click)="goNextPage()" [style.transform]="nextBtnTransform"> -> </button>

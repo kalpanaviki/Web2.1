@@ -1,0 +1,74 @@
+.container-fluid {
+  display: flex;
+}
+.main-s1{
+  justify-content: center;
+  background-color: #086788;
+  padding: 12rem 0rem 0rem 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  
+  h1{
+    font-size: 2rem;
+      color: #ffd500;
+      font-weight:bold;
+      
+  }
+}
+
+
+.contact-page {
+    padding:1rem 0rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      
+    }
+  
+    .contact-details {
+      .offices {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 6rem;
+        margin: 3rem 0 5rem 0;
+        
+  
+        .office {
+          margin-bottom: 20px;
+          
+  
+          h2 {
+            margin-bottom: 10px;
+            color: #333;
+            font-family: Arial, sans-serif;
+          }
+  
+          p {
+            line-height: 1.6;
+            color: #666;
+          }
+  
+          a {
+            color: #007bff;
+            text-decoration: none;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          .link{
+            color: #666;
+            text-decoration: none;
+          }
+        }
+      }
+  
+    }
+  }
+
+
+ 

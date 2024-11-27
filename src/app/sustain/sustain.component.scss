@@ -1,0 +1,262 @@
+.container-fluid {
+    display: flex;
+    
+  }
+  
+  .image-container {
+    display: grid;
+    place-items: center;
+    margin-top: 15px;
+  }
+  
+  img {
+    position: relative;
+    width: 100px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 0rem;
+    padding: 0rem 0;
+    margin-top: 0%;
+  }
+
+  .main-s1{
+    justify-content: center;
+    background-color: #086788;
+    padding: 12rem 0rem 0rem 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    
+    h1{
+      font-size: 2rem;
+        color: #ffd500;
+        font-weight:bold;
+    }
+  }
+  
+  .title {
+    color: #17ec9e;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding: 1rem;
+    
+  }
+  
+  .description {
+    color: #086788;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 3rem;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: center;
+    text-align: justify;
+  }
+  
+  /* Media queries for mobile phone screens */
+  @media (max-width: 1025px) {
+    .content {
+        display: grid;
+        grid-template-columns: 100%;
+        img{
+          padding: 0;
+          margin: 5%;
+        }
+    }
+  
+    .title {
+        color: #17ec9e;
+        font-size: 23px;
+        font-weight: 600;
+        padding: 1rem 0rem 1.5rem 0rem;
+        text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+    }
+  
+    .description {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+  
+    img {
+        width: 30px;
+    }
+  }
+  
+  
+  /* Media queries for mobile phone screens */
+  @media (min-width:601px) and (max-width: 1025px) {
+    .content {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        img{
+          padding: 0;
+         margin: 0 30%;
+        }
+    }
+    
+    .title {
+        font-size: 3.5rem;
+        padding: 1rem 0rem 2rem 2rem;
+    }
+  
+  
+    .description {
+        font-size: 28px;
+        padding:2rem;
+    }
+  
+    img {
+        width: 40px;
+    }
+  }
+  
+  
+  
+  
+  
+  .main-sus1,
+  .main-sus2,
+  .main-sus3,
+  .main-sus4 {
+    .card-container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 100%;
+        padding: 1rem;
+        .card {
+            position: relative;
+            margin: 2.5rem;
+            border-radius: 25px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            img{
+              width: 70px;
+            }
+        }
+    }
+  
+    .card:hover {
+        transform: scale(1.05);
+        transform-origin: center center;
+    }
+    .card-body{
+      padding: 0px 20px;
+    }
+    .card-title {
+        font-family: 'Bauhaus Light';
+        font-size: 25px;
+        font-weight: 800;
+        text-align: center;
+        
+    }
+  
+    .card-text {
+        font-size: 18px;
+        font-weight: 300;
+        justify-content: center;
+        text-align: justify;
+    }
+  }
+  
+  .main-sus1,.main-sus2 {
+    background-color: #0680a8;
+   
+    .card{
+      background-color:  #0c2323;
+    }
+    .card-title {
+        color: #ffd500;
+    }
+    .card-text {
+        color: #ffffff;
+    }
+  }
+  
+  
+  
+  .main-sus3 {
+    .title {
+        color: #6dcd9a;
+        font-weight: 900;
+        padding: 2rem;
+    }
+    .card-text {
+        color: #27353b;
+    }
+    .description{
+      color: #27353b;
+    }
+  }
+  
+  .main-sus4 {
+    .card{
+      background-color: #0c2323;
+    }
+    .card-title {
+        color: #ffd500;
+    }
+    .card-text {
+        color: #ffffff;
+    }
+  }
+  
+  /* Media queries for mobile phone screens */
+  @media (max-width: 1025px) {
+    .main-sus1,
+    .main-sus2,
+    .main-sus3,
+    .main-sus4 {
+        .card-container {
+            display: grid;
+            grid-template-columns: 100%;
+            width: 100%;
+            gap: 2rem;
+            .card {
+                margin: 1rem;
+                border-radius: 25px;
+            }
+        }
+  
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+  
+        .card-text {
+            font-size: 16px;
+            font-weight: 100;
+        }
+    }
+  }
+  
+  
+  /* Media queries for mobile phone screens */
+  @media (min-width:601px) and (max-width: 1025px) {
+    .main-sus1,
+    .main-sus2,
+    .main-sus3,
+    .main-sus4 {
+        .card-container {
+            gap: 4rem;
+            margin:10%;
+            .card {
+                margin: 1rem;
+            }
+        }
+  
+        .card-title {
+            font-size: 28px;
+        }
+  
+        .card-text {
+            font-size: 25px;
+        }
+    }
+  
+  }

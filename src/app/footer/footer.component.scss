@@ -1,0 +1,93 @@
+.container {
+    position: relative;
+    background-color: #f2f2f2; /* Fallback background color */
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  
+.contact-page-2 {
+    padding:1rem 0rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      
+    }
+  
+    .contact-details {
+      .offices {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 35%;
+        gap: 3rem;
+        margin: 1rem 0 1rem 0;
+      }
+  
+        .office {
+          h1{
+            font-family: Arial, sans-serif;
+            strong{
+              color: #086788;
+            }
+          }
+          
+  
+          h2 {
+            margin-bottom: 10px;
+            color: #333;
+            font-family: Arial, sans-serif;
+          }
+  
+          p {
+            line-height: 1;
+            color: #666;
+          }
+  
+          .link {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+  
+            &:hover {
+              color: #0400ff;
+            }
+          }
+          a{
+            color: #666;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+  
+    }
+  
+    #iframe-container {
+      position: fixed;
+      top: 170px; /* Adjust as needed */
+      left: 50px; /* Adjust as needed */
+      width: 80%;
+      height: 70%;
+      background-color: white;
+      border: 1px solid #ccc;
+      z-index: 1000;
+      display: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+      iframe {
+        width: 100%;
+        height: calc(100% - 40px); /* Adjust to account for the close button */
+      }
+    
+      button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+      }
+    }
+

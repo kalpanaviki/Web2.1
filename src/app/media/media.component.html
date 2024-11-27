@@ -1,0 +1,29 @@
+<div class="media-header">
+  <ul>
+    <li>
+      <a 
+        class="nav-link" 
+        [ngClass]="{'active': selectedMenuItem === 'news'}"
+        (click)="selectMenuItem('news')">
+        News
+      </a>
+    </li>
+    <li>
+      <a 
+        class="nav-link" 
+        [ngClass]="{'active': selectedMenuItem === 'event'}"
+        (click)="selectMenuItem('event')">
+        Events
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="content">
+  <ng-container *ngIf="selectedMenuItem === 'news'">
+    <app-news></app-news>
+  </ng-container>
+  <ng-container *ngIf="selectedMenuItem === 'event'">
+    <app-event></app-event>
+  </ng-container>
+</div>

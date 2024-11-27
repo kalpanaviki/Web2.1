@@ -1,0 +1,20 @@
+<div id="navbar" class="header">
+    <a id="logo" class="brand" href="#"><img src="../assets/images/UniBio_Logo_nobg.png" /></a>
+    <div id="navbar-right">
+      <a class="link" routerLink="" (click)="navigateAndCloseMenu('/')">Home</a>
+      <a class="link" routerLink="/about" (click)="navigateAndCloseMenu('/about')">About</a>
+      <a class="link" routerLink="/monodon" (click)="navigateAndCloseMenu('/monodon')">Monodon 101</a>
+      <a class="link" routerLink="/sustain" (click)="navigateAndCloseMenu('/sustain')">Sustainability</a>
+      <a class="link" routerLink="/e-manual" (click)="navigateAndCloseMenu('/e-manual')">E-manual</a>
+      <a class="link" routerLink="/media" (click)="navigateAndCloseMenu('/media')">Media</a>
+      <a class="link" routerLink="/contact" (click)="navigateAndCloseMenu('/contact')">Contact</a>
+      <a  class="link active" (click)="openIframe()">Seed Enquiry</a>
+    
+    </div>
+  </div> 
+
+<!-- Container for iframe -->
+<div #iframeContainer id="iframe-container" style="display: none;">
+  <iframe #iframe src="" frameborder="0"></iframe>
+  <button (click)="closeIframe()">Close</button>
+</div>

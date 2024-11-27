@@ -1,0 +1,13 @@
+<div class="slideshow-container">
+  <!-- Loop through each slide -->
+  <div class="mySlides fade" *ngFor="let slide of slideshowService.slides; let i = index" [ngClass]="{'active': slideshowService.slideIndex === i + 1}">
+    <div class="numbertext">{{ i + 1 }} / {{ slideshowService.slides.length }}</div>
+    <img [src]="slide.image" style="width:100%"> <!-- Dynamic image source -->
+    <div class="text">{{ slide.caption }}</div>
+  </div>
+
+  <!-- Dots container for navigation -->
+  <div class="dot-container">
+    <span class="dot" *ngFor="let slide of slideshowService.slides; let i = index" [ngClass]="{'active': slideshowService.slideIndex === i + 1}" (click)="currentSlide(i + 1)"></span>
+  </div>
+</div>

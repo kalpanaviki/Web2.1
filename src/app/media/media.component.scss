@@ -1,0 +1,58 @@
+.media-header {
+  display: flex;
+  justify-content: center;
+  background-color: #086788;
+  padding: 10px;
+  padding-top: 12rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.media-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+
+.media-header li {
+  display: inline;
+}
+
+.media-header a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffd500;
+  font-size: 2rem;
+  font-family: 'Bauhaus Light';
+  font-weight: bold;
+  margin-top: 14px;
+  padding: 0px 20px;
+  display: block;
+  position: relative; /* Required for the pseudo-element positioning */
+  overflow: hidden; /* Ensures the underline effect is contained */
+}
+
+.media-header a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Adjust height as needed */
+  background-color: #ffffff;
+  transition: width 0.2s ease; /* Animation duration */
+}
+
+.media-header a.active::before {
+  width: 100%; /* Full width for the active link */
+}
+
+.media-header a:hover::before {
+  width: 0%; /* Ensure hover effect works */
+}
+
+.media-header a:hover {
+  color: #ffffff;
+}

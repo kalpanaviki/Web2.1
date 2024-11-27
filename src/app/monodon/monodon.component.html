@@ -1,0 +1,26 @@
+<!--Monodon-->
+<div class="container-fluid main-s1"> <h1>Monodon 101</h1></div>
+ <div class="container-fluid main-mono" id="Associates">
+  <div class="card-container">
+    <div class="card" *ngFor="let slide of slides">
+      <img [src]="slide.imageSrc" alt="Slide Image" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-text1">{{ slide.caption1 }}</h5>
+        <a 
+        [routerLink]="!slide.isDisabled ? slide.link : null" 
+        class="btn-custom" 
+        (click)="slide.isDisabled ? $event.preventDefault() : null"
+        [class.disabled]="slide.isDisabled"
+        [attr.aria-disabled]="slide.isDisabled ? true : null">
+        Learn more
+      </a>
+        <a class="btn-custom ml-2" (click)="!slide.isDisabled ? shareSlide(slide.link, slide.caption1) : $event.preventDefault()"
+        [class.disabled]="slide.isDisabled"
+        [attr.aria-disabled]="slide.isDisabled ? true : null">
+        Share
+      </a>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
